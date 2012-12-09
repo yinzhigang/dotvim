@@ -8,10 +8,10 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles
-Bundle 'UltiSnips'
-Bundle 'The-NERD-tree'
-Bundle 'Tagbar'
-Bundle 'neocomplcache'
+Bundle 'SirVer/ultisnips'
+Bundle 'scrooloose/nerdtree'
+Bundle 'majutsushi/tagbar'
+Bundle 'Shougo/neocomplcache'
 Bundle 'tangledhelix/vim-octopress'
 
 filetype plugin indent on

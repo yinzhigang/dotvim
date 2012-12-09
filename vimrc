@@ -1,5 +1,5 @@
-" vbundle
-source ~/.vim/vbundle.vimrc
+" vundle
+source ~/.vim/vundle.vimrc
 
 syntax on
 set number
