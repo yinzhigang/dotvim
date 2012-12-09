@@ -14,6 +14,8 @@ map <F6> :NERDTreeToggle<CR>
 " 绑定F7键打开/关闭Tagbar
 map <F7> :TagbarToggle<CR>
 
+let g:UltiSnipsSnippetDirectories=["~/.vim/UltiSnips", "UltiSnips"]
+
 " Popup color.
 hi Pmenu ctermbg=8
 hi PmenuSel ctermbg=1
