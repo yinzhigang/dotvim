@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 " My Bundles
 Bundle 'SirVer/ultisnips'
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'majutsushi/tagbar'
 Bundle 'Shougo/neocomplcache'
 Bundle 'tangledhelix/vim-octopress'
