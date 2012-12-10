@@ -3,11 +3,12 @@ let g:acp_enableAtStartup = 0
 " Neocomplcache 启动
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_max_list = 10
-"let g:neocomplcache_disable_auto_complete = 1
+let g:neocomplcache_disable_auto_complete = 1
 let g:neocomplcache_enable_smart_case = 1
 let g:neocomplcache_enable_camel_case_completion = 1
 let g:neocomplcache_min_syntax_length = 4
 let g:neocomplcache_min_keyword_length = 4
+let g:neocomplcache_auto_completion_start_length = 4
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 let g:neocomplcache_enable_quick_match = 1
 
@@ -45,7 +46,7 @@ inoremap <expr><C-e>  neocomplcache#cancel_popup()
 "inoremap <expr><Enter>  pumvisible() ? "\<C-Y>" : "\<Enter>"
 
 " AutoComplPop like behavior. 
-let g:neocomplcache_enable_auto_select = 1 
+"let g:neocomplcache_enable_auto_select = 1 
 
 " Shell like behavior(not recommended). 
 "set completeopt+=longest 
