@@ -9,10 +9,12 @@ set tabstop=4
 set shiftwidth=4
 set expandtab   " 将TAB转换为空格
 set softtabstop=4
+set hlsearch
+"set laststatus=2
 " 绑定F6键打开/关闭目录树
 map <F6> :NERDTreeToggle<CR>
 " 绑定F7键打开/关闭Tagbar
-map <F7> :TagbarToggle<CR>
+map <F5> :TagbarToggle<CR>
 
 let g:UltiSnipsSnippetDirectories=["~/.vim/UltiSnips", "UltiSnips"]
 

@@ -14,6 +14,11 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'majutsushi/tagbar'
 Bundle 'Shougo/neocomplcache'
 Bundle 'tangledhelix/vim-octopress'
+Bundle 'shawncplus/phpcomplete.vim'
+Bundle 'javacomplete'
+Bundle 'mattn/zencoding-vim'
+Bundle 'myusuf3/numbers.vim'
+Bundle 'Lokaltog/powerline'
 
 filetype plugin indent on
 " vundle end
