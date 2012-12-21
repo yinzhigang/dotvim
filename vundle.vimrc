@@ -18,7 +18,10 @@ Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'javacomplete'
 Bundle 'mattn/zencoding-vim'
 Bundle 'myusuf3/numbers.vim'
-Bundle 'Lokaltog/powerline'
+"Bundle 'Lokaltog/powerline'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'matchit.zip'
+Bundle 'AutoClose'
 
 filetype plugin indent on
 " vundle end

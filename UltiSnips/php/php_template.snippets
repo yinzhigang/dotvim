@@ -1,10 +1,21 @@
 extends php,html
 
-snippet techo "ECHO for html"
-<?php echo $1; ?>
+snippet techo "ECHO for html" w
+<?php echo $1?>
 endsnippet
 
-
-snippet tphp "PHP label for html"
+snippet tphp "PHP label for html" w
 <?php $1?>
+endsnippet
+
+snippet tif "If block for html" b
+<?php if (${1:$a == $b}): ?>
+$2
+<?php endif; ?>
+endsnippet
+
+snippet tforeach "PHP foreach for html" b
+<?php foreach (${1:$item} as ${2:$items}): ?>
+$3
+<?php endforeach; ?>
 endsnippet
