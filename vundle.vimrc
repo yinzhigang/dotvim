@@ -22,6 +22,7 @@ Bundle 'myusuf3/numbers.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'matchit.zip'
 Bundle 'AutoClose'
+""Bundle 'sudo.vim'
 
 filetype plugin indent on
 " vundle end
