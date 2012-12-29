@@ -105,7 +105,3 @@ if has("gui_running")
     set columns=140          " 设置宽
     set lines=40             " 设置长
 endif
-if has("gui_macvim")
-    macmenu &File.New\ Tab key=<nop>
-    map <D-t> :CommandT<CR>
-endif
