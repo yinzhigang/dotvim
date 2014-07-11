@@ -21,6 +21,20 @@ let mapleader = ','
 let g:UltiSnipsSnippetDirectories=["~/.vim/UltiSnips", "UltiSnips"]
 let g:Powerline_symbols = 'fancy'
 let NERDTreeIgnore = ['\.pyc$']
+" CommandT 忽略部分文件
+set wildignore=*.swp,*.bak,*.pyc,*.class,*.jar,*.gif,*.png,*.jpg,.git,target,bin
+
+if has("cscope")
+  set csprg=cscope
+  set csto=1
+  set cst
+  set nocsverb
+  " add any database in current directory
+  if filereadable("cscope.out")
+      cs add cscope.out
+  endif
+  set csverb
+endif
 
 let g:tagbar_type_objc = {
     \ 'ctagstype' : 'ObjectiveC',
