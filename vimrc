@@ -12,6 +12,9 @@ set softtabstop=4
 set smartindent
 set hlsearch
 set laststatus=2
+set fileencodings=ucs-bom,utf-8,utf-16,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+" 禁用预览窗口
+set completeopt-=preview
 " 绑定F6键打开/关闭目录树
 map <F6> :NERDTreeToggle<CR>
 " 绑定F7键打开/关闭Tagbar
@@ -19,22 +22,26 @@ map <F5> :TagbarToggle<CR>
 let mapleader = ','
 
 let g:UltiSnipsSnippetDirectories=["~/.vim/UltiSnips", "UltiSnips"]
-let g:Powerline_symbols = 'fancy'
+let g:UltiSnipsExpandTrigger="<tab>"
+"let g:Powerline_symbols = 'fancy'
 let NERDTreeIgnore = ['\.pyc$']
+let g:EclimCompletionMethod = 'omnifunc'
 " CommandT 忽略部分文件
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.jar,*.gif,*.png,*.jpg,.git,target,bin
 
-if has("cscope")
-  set csprg=cscope
-  set csto=1
-  set cst
-  set nocsverb
-  " add any database in current directory
-  if filereadable("cscope.out")
-      cs add cscope.out
-  endif
-  set csverb
-endif
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
+let g:ycm_filetype_blacklist = {
+      \ 'tagbar' : 1,
+      \ 'qf' : 1,
+      \ 'notes' : 1,
+      \ 'markdown' : 1,
+      \ 'unite' : 1,
+      \ 'text' : 1,
+      \ 'vimwiki' : 1,
+      \ 'gitcommit' : 1,
+      \}
 
 let g:tagbar_type_objc = {
     \ 'ctagstype' : 'ObjectiveC',
@@ -109,5 +116,5 @@ hi Pmenu ctermbg=8
 hi PmenuSel ctermbg=1
 hi PmenuSbar ctermbg=0
 
-source ~/.vim/neocomplcache.vimrc
+"source ~/.vim/neocomplcache.vimrc
 
