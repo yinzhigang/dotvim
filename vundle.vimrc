@@ -36,6 +36,7 @@ Bundle 'othree/html5.vim'
 "Bundle 'tfnico/vim-gradle'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'marijnh/tern_for_vim'
+Bundle 'tfnico/vim-gradle'
 
 filetype plugin indent on
 " vundle end

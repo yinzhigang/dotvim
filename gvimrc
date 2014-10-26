@@ -4,7 +4,7 @@ set guifont=Monaco:h13   " 设置默认字体为monaco
 set gfw=SimHei:h13
 set showtabline=2        " 开启自带的tab栏
 set columns=140          " 设置宽
-set lines=40             " 设置长
+set lines=50             " 设置长
 "colorscheme default
 set background=dark
 
