@@ -1,5 +1,5 @@
 set go=aAce              " 去掉难看的工具栏和滑动条
-set transparency=3      " 透明背景
+"set transparency=3      " 透明背景
 set guifont=Monaco:h13   " 设置默认字体为monaco
 set gfw=SimHei:h13
 set showtabline=2        " 开启自带的tab栏

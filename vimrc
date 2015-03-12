@@ -15,11 +15,17 @@ set laststatus=2
 set fileencodings=ucs-bom,utf-8,utf-16,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 " 禁用预览窗口
 set completeopt-=preview
+" 禁止创建 swp 文件
+set noswapfile
 " 绑定F6键打开/关闭目录树
 map <F6> :NERDTreeToggle<CR>
 " 绑定F7键打开/关闭Tagbar
 map <F5> :TagbarToggle<CR>
 let mapleader = ','
+
+map <Leader>ji :JavaImport<CR>
+nnoremap <silent> <buffer> <leader>i :JavaImport<cr>
+nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
 
 let g:UltiSnipsSnippetDirectories=["~/.vim/UltiSnips", "UltiSnips"]
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -27,7 +33,7 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let NERDTreeIgnore = ['\.pyc$']
 let g:EclimCompletionMethod = 'omnifunc'
 " CommandT 忽略部分文件
-set wildignore=*.swp,*.bak,*.pyc,*.class,*.jar,*.gif,*.png,*.jpg,.git,target,bin
+set wildignore=*.swp,*.bak,*.pyc,*.class,*.jar,*.gif,*.png,*.jpg,.git,target,bin,build,out
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
