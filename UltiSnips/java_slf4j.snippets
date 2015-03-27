@@ -1,0 +1,17 @@
+
+snippet slf4j "Logger definition" b
+final static Logger logger = LoggerFactory.getLogger(${1:`!p
+snip.rv = snip.basename or "untitled"`}.class);
+endsnippet
+
+snippet debug "slf4j debug log" b
+logger.debug($1);
+endsnippet
+
+snippet info "slf4j info log" b
+logger.info($1);
+endsnippet
+
+snippet error "slf4j error log" b
+logger.error($1);
+endsnippet

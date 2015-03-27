@@ -43,6 +43,11 @@ Plugin 'marijnh/tern_for_vim'
 Plugin 'tfnico/vim-gradle'
 Plugin 'kelwin/vim-smali'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'cocopon/iceberg.vim'
+"Plugin 'croaky/vim-colors-github'
+Plugin 'cSyntaxAfter'
+Plugin 'nelstrom/vim-mac-classic-theme'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 

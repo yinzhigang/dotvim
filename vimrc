@@ -35,6 +35,8 @@ let g:EclimCompletionMethod = 'omnifunc'
 " CommandT 忽略部分文件
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.jar,*.gif,*.png,*.jpg,.git,target,bin,build,out
 
+autocmd! FileType c,cpp,java,php call CSyntaxAfter()
+
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
