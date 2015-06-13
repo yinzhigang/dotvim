@@ -2,3 +2,4 @@ bundle/
 .*
 !.gitignore
 eclim/
+plugin/eclim.vim
