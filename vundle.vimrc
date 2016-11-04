@@ -11,6 +11,9 @@ Plugin 'gmarik/Vundle.vim'
 " My Plugins
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+" UltiSnips for react
+Plugin 'mlaursen/vim-react-snippets'
+
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'majutsushi/tagbar'
@@ -40,7 +43,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'Rip-Rip/clang_complete'
 Plugin 'L9'
 "Plugin 'othree/vim-autocomplpop'
-"Plugin 'marijnh/tern_for_vim'
+Plugin 'marijnh/tern_for_vim'
 Plugin 'tfnico/vim-gradle'
 Plugin 'kelwin/vim-smali'
 Plugin 'ekalinin/Dockerfile.vim'
@@ -51,6 +54,8 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'yinzhigang/qt-highlight-vim'
 Plugin 'peterhoeg/vim-qml'
 Plugin 'lepture/vim-jinja'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 " colorscheme
 Plugin 'cocopon/iceberg.vim'

@@ -32,6 +32,7 @@ let g:UltiSnipsExpandTrigger="<tab>"
 "let g:Powerline_symbols = 'fancy'
 let NERDTreeIgnore = ['\.pyc$']
 let g:EclimCompletionMethod = 'omnifunc'
+let g:jsx_ext_required = 0
 " CommandT 忽略部分文件
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.jar,*.gif,*.png,*.jpg,.git,target,bin,build,out,node_modules
 
@@ -40,6 +41,8 @@ autocmd! FileType c,cpp,java,php call CSyntaxAfter()
 " Default pairs: AutoClose#ParsePairs("() [] {} ` \" '")
 autocmd FileType jinja,jinja2
         \ let b:AutoClosePairs = AutoClose#DefaultPairsModified("", "{}")
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2 expandtab
 
 let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/'
 
